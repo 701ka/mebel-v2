@@ -1,0 +1,28 @@
+.update {
+  padding-top: 173px;
+  padding-bottom: 100px;
+  background-image: url("../../src/update__img/update__img_1.jpg");
+  background-position: calc(50% - 0px) calc(50% + 25px);
+  background-repeat: no-repeat;
+}
+.update__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.update__title {
+  width: 574px;
+  font-family: $main-font;
+  color: $off-blue;
+  font-size: 35px;
+  line-height: 155%;
+  letter-spacing: 1.5%;
+  text-align: center;
+}
+.shop__link {
+  padding: 16px 34px;
+  color: $sky-blue;
+  background-color: $pink-color;
+  font-family: $main-font;
+}

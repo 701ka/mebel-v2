@@ -1,0 +1,107 @@
+.header__top {
+  background-color: $violet;
+  color: $sky-blue;
+  padding: 13px 0;
+}
+.header__top_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header__top_left {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+  width: 100%;
+}
+.email__wrapper {
+  column-gap: 10px;
+}
+.icon__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.header__icon {
+  font-size: 13px;
+}
+.header__text {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: $main-font;
+}
+.header {
+  padding: 20px 0;
+}
+.phone__wrapper {
+  column-gap: 10px;
+}
+
+.header__top_right {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+}
+
+.top__right_text {
+  font-family: $main-font;
+  font-weight: 600;
+}
+
+.buy__cart_icon {
+  margin-left: 20px;
+}
+.header__bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__bot_left {
+  display: flex;
+  align-items: center;
+  column-gap: 88px;
+}
+.header__title {
+  font-family: $main-font;
+  font-size: 34px;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.header__item {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.header__item:hover {
+  color: $pink-color;
+  .header__link {
+    color: $pink-color;
+  }
+}
+.header__link {
+  font-family: $second-font;
+  color: $black;
+  transition: all 0.2s ease;
+}
+
+.header__bot_right {
+  display: flex;
+  align-items: center;
+}
+.header__inp {
+  padding: 9px 7px 9px 9px;
+  border-right: none;
+  border-top: 2px solid $grey;
+  border-bottom: 2px solid $grey;
+  border-left: 2px solid $grey;
+}
+.header__btn {
+  border: none;
+  padding: 11px 15px;
+  background-color: $pink-color;
+  color: $sky-blue;
+}

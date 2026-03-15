@@ -1,0 +1,97 @@
+.ad {
+  background-color: $hero-bg;
+  padding-bottom: 150px;
+  padding-top: 150px;
+  background-image:
+    url("../../src/ad__img/ad__img_1.png"),
+    url("../../src/ad__img/ad__img_2.png");
+  background-repeat: no-repeat;
+  background-position:
+    calc(50% - 400px) 50%,
+    calc(50% - 430px) calc(50% - 10px);
+}
+
+.ad__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ad__info {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.ad__title {
+  font-family: $main-font;
+  color: $off-blue;
+  font-size: 35px;
+  line-height: 132%;
+  letter-spacing: 1.5%;
+  width: 507px;
+}
+.ad__list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.ad__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 9px;
+  &:nth-child(2) {
+    .ad__color {
+      background-color: $blue-color;
+    }
+  }
+  &:nth-child(3) {
+    .ad__color {
+      background-color: $green-color;
+    }
+  }
+}
+.ad__color {
+  margin-top: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $pink-color;
+}
+.ad__text {
+  font-family: $second-font;
+  color: $sub-text-color;
+}
+.ad__price__wrapper {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.ad__btn {
+  padding: 12px 24px;
+  border: none;
+  font-family: $main-font;
+  background-color: $pink-color;
+  color: $sky-blue;
+  font-weight: 600;
+  font-size: 17px;
+}
+.ad__name {
+  display: flex;
+  flex-direction: column;
+}
+.ad__subtit {
+  font-size: 14px;
+  font-family: $main-font;
+  color: $nany-blue;
+  font-weight: 600;
+  letter-spacing: 2%;
+}
+.ad__price {
+  font-size: 14px;
+  font-family: $second-font;
+  color: $nany-blue;
+  font-weight: 600;
+  letter-spacing: 2%;
+}

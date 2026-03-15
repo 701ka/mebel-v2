@@ -1,0 +1,112 @@
+.discount {
+  padding-top: 100px;
+  background-image: url("../../src/discount__img/discount__img_2.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 250px) calc((50% + 100px));
+}
+.discount__title {
+  font-family: $main-font;
+  color: $off-blue;
+  font-size: 42px;
+  text-align: center;
+}
+.discount__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.discount__nav_item {
+  color: $nany-blue;
+  font-size: 18px;
+  font-family: $second-font;
+  width: max-content;
+  transition: all ease 0.3s;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: $pink-color;
+    bottom: -2px;
+    height: 2px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+  }
+  &:hover {
+    color: $pink-color;
+    &::before {
+      width: 100%;
+    }
+  }
+}
+.discount__bot {
+  display: flex;
+  justify-content: center;
+}
+.discount__inf {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.discount__bot_title {
+  font-family: $main-font;
+  color: $off-blue;
+  font-size: 35px;
+  line-height: 132%;
+  letter-spacing: 1.5%;
+}
+.discount__subtitle {
+  font-weight: 400;
+  font-size: 21px;
+  color: $pink-color;
+  font-family: $main-font;
+  line-height: 132%;
+  letter-spacing: 1.5%;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.discount__text {
+  margin-bottom: 20px;
+  color: $price-grey;
+  width: 523px;
+  font-family: $second-font;
+  line-height: 30px;
+  letter-spacing: 2%;
+  font-size: 17px;
+}
+.discount__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  .discount__item:nth-child(4) {
+    padding-right: 30px;
+  }
+}
+.discount__item {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+  color: $price-grey;
+}
+.discount__icon {
+  color: $dark-grey;
+}
+.discount__item_text {
+  line-height: 30px;
+  letter-spacing: 2%;
+  font-family: $second-font;
+}
+.discount__btn {
+  padding: 20px 48px;
+  font-family: $main-font;
+  font-size: 17px;
+  letter-spacing: 2%;
+  color: $sky-blue;
+  border: none;
+  background-color: $pink-color;
+  margin-top: 27px;
+}
