@@ -14,6 +14,10 @@
   color: $off-blue;
   font-family: $main-font;
   font-size: 42px;
+  &::selection {
+    color: $white;
+    background-color: $off-blue;
+  }
 }
 .leatest__list {
   width: 100%;

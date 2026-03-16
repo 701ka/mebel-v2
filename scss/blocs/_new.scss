@@ -14,12 +14,20 @@
   font-family: $main-font;
   font-size: 42px;
   color: $off-blue;
+  &::selection {
+    color: $white;
+    background-color: $off-blue;
+  }
 }
 .new__opt {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  &::selection {
+    color: $white;
+    background-color: $off-blue;
+  }
 }
 .opt__item {
   font-family: $second-font;
@@ -83,6 +91,9 @@
   }
   &:hover {
     .new__icon_list {
+      opacity: 1;
+    }
+    .new__btn {
       opacity: 1;
     }
   }
@@ -156,4 +167,22 @@
   font-size: 12px;
   font-weight: 400;
   text-decoration: line-through;
+}
+.new__btn {
+  font-family: $main-font;
+  color: $sky-blue;
+  background-color: $green-color;
+  padding: 8px 13px;
+  border-radius: 2px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 12%;
+  left: 50%;
+  transition: all ease 0.3s;
+  position: absolute;
+  transform: translateX(-50%);
+  opacity: 0;
+  cursor: pointer;
 }

@@ -14,13 +14,17 @@
   font-family: $main-font;
   color: $off-blue;
   font-size: 42px;
+  &::selection {
+    color: $white;
+    background-color: $off-blue;
+  }
 }
 .offer__list {
   display: flex;
   align-items: center;
   width: 100%;
   column-gap: 20px;
-  .offer__item:nth-child(1){
+  .offer__item:nth-child(1) {
     .offer__img {
       width: 80px;
       padding-top: 13px;

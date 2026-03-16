@@ -65,6 +65,7 @@ function newRender(array, list) {
           <i class="fa-solid fa-heart"></i>
         </li>
         </ul>
+      <button class="new__btn">View Details</button>
     </li>`;
   });
 }

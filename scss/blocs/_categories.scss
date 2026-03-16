@@ -12,6 +12,10 @@
   font-family: $main-font;
   font-size: 42px;
   color: $off-blue;
+  &::selection {
+    color: $white;
+    background-color: $off-blue;
+  }
 }
 .categories__list {
   display: flex;

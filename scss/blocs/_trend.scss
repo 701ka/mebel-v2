@@ -11,6 +11,10 @@
   color: $off-blue;
   font-size: 42px;
   text-align: center;
+  &::selection {
+    color: $white;
+    background-color: $off-blue;
+  }
 }
 .trend__main_list {
   display: flex;

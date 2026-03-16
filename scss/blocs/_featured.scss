@@ -14,6 +14,10 @@
   color: $off-blue;
   font-size: 42px;
   text-align: center;
+  &::selection {
+    color: $white;
+    background-color: $off-blue;
+  }
 }
 .featured__list {
   display: flex;
@@ -179,4 +183,5 @@
   transition: all ease 0.3s;
   opacity: 0;
   transform: translate(-50%);
+  cursor: pointer;
 }
